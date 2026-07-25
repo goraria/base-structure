@@ -1,7 +1,19 @@
 {
-  "name": "gorth-base-structure",
-  "version": "1.1.6",
+  "name": "@gorth/structure",
+  "version": "2.0.0",
   "description": "",
+  "type": "module",
+  "author": "Gorthenburg",
+  "license": "GORTH",
+  "private": true,
+  "keywords": [
+    "gorth",
+    "supabase"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goraria/base-structure.git"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -59,7 +71,6 @@
   "files": [
     "dist"
   ],
-  "type": "module",
   "scripts": {
     "build": "tsup --minify",
     "prepack": "pnpm build",
@@ -71,12 +82,6 @@
     "update": "pnpm update",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "gorth",
-    "supabase"
-  ],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@better-auth/infra": "^0.3.7",
     "@better-auth/oauth-provider": "^1.6.25",
@@ -100,12 +105,12 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^25.9.4",
+    "@types/node": "^26.1.1",
     "@types/pg": "^8.20.0",
-    "eslint": "^9.39.4",
+    "eslint": "^10.8.0",
     "prettier": "^3.9.6",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "packageManager": "pnpm@10.33.4"
 }
