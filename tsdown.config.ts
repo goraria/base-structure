@@ -4,22 +4,21 @@ import { defineConfig } from "tsdown"
 
 export default defineConfig({
   clean: true,
-  dts: false, //
-  bundle: true,
+  dts: true,
+  fixedExtension: false,
   // Keep shared modules (e.g. React contexts) in common chunks
   // so different entrypoints consume the same runtime instance.
   // splitting: true,
   entry: [
     "src/index.ts",
     "src/lib/*.ts",
+    "src/common/*.ts",
     "src/cores/**/*.ts",
   ],
-  format: ["esm"],
+  format: ["esm", "cjs"],
   sourcemap: false,
   minify: false,
   target: "es2024",
   outDir: "dist",
   treeshake: true,
-
-  external: [""],
 })
