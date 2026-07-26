@@ -1,6 +1,6 @@
 /// <reference types="node" />
 
-import { defineConfig } from "tsup"
+import { defineConfig } from "tsdown"
 
 export default defineConfig({
   clean: true,
@@ -8,7 +8,7 @@ export default defineConfig({
   bundle: true,
   // Keep shared modules (e.g. React contexts) in common chunks
   // so different entrypoints consume the same runtime instance.
-  splitting: true,
+  // splitting: true,
   entry: [
     "src/index.ts",
     "src/lib/*.ts",
