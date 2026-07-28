@@ -1,6 +1,6 @@
 {
   "name": "@gorth/structure",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -28,10 +28,20 @@
       "import": "./dist/lib/*.js",
       "require": "./dist/lib/*.cjs"
     },
-    "./common/*": {
-      "types": "./dist/common/*.d.ts",
-      "import": "./dist/common/*.js",
-      "require": "./dist/common/*.cjs"
+    "./modules/*": {
+      "types": "./dist/modules/*.d.ts",
+      "import": "./dist/modules/*.js",
+      "require": "./dist/modules/*.cjs"
+    },
+    "./modules/*/*": {
+      "types": "./dist/modules/*/*.d.ts",
+      "import": "./dist/modules/*/*.js",
+      "require": "./dist/modules/*/*.cjs"
+    },
+    "./modules/*/*/*": {
+      "types": "./dist/modules/*/*/*.d.ts",
+      "import": "./dist/modules/*/*/*.js",
+      "require": "./dist/modules/*/*/*.cjs"
     },
     "./cores/*": {
       "types": "./dist/cores/*.d.ts",
@@ -88,10 +98,10 @@
     "@better-auth/scim": "^1.6.25",
     "@better-auth/sso": "^1.6.25",
     "@better-auth/stripe": "^1.6.25",
-    "@supabase/postgrest-js": "^2.110.8",
+    "@supabase/postgrest-js": "^2.111.0",
     "@supabase/server": "^1.4.1",
     "@supabase/ssr": "^0.12.3",
-    "@supabase/supabase-js": "^2.110.8",
+    "@supabase/supabase-js": "^2.111.0",
     "axios": "^1.18.1",
     "better-auth": "^1.6.25",
     "graphql": "^17.0.2",
@@ -105,9 +115,9 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
     "@types/pg": "^8.20.0",
-    "eslint": "^10.8.0",
+    "eslint": "^9.39.5",
     "prettier": "^3.9.6",
     "tsdown": "^0.22.14",
     "typescript": "^5.9.3"

@@ -1,4 +1,4 @@
-import { createCommonPublicClient } from '../common/admin.js'
+import { createCommonPublicClient } from '@/modules/common/admin'
 import type { SupabaseClientOptions } from '@supabase/supabase-js'
 
 export function createExpressClient(
