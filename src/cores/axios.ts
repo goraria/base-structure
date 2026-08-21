@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 
-// export * from "axios";
-export default axios;
+export * from "axios";
+export { default } from "axios";
