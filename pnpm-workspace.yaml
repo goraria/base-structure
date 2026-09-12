@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - svix@2.5.0
