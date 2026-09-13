@@ -1,6 +1,6 @@
 {
   "name": "@gorth/structure",
-  "version": "2.2.9",
+  "version": "2.2.10",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -93,6 +93,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@ably/ai-transport": "^0.8.0",
+    "@ably/chat": "^1.4.0",
+    "@ably/spaces": "^0.5.2",
     "@better-auth/infra": "^0.4.9",
     "@better-auth/oauth-provider": "^1.7.4",
     "@better-auth/scim": "^1.7.4",
@@ -102,6 +105,7 @@
     "@supabase/server": "^1.6.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.116.0",
+    "ably": "^2.28.0",
     "axios": "^1.20.0",
     "better-auth": "^1.7.4",
     "graphql": "^17.0.2",
@@ -112,15 +116,15 @@
     "postgres": "^3.4.9",
     "svix": "^2.5.0",
     "uuid": "^14.0.2",
-    "zod": "^4.6.2"
+    "zod": "^4.6.4"
   },
   "devDependencies": {
-    "@types/node": "^26.5.0",
+    "@types/node": "^26.5.1",
     "@types/pg": "^8.23.1",
     "eslint": "^9.39.5",
     "prettier": "^3.9.6",
     "tsdown": "^0.23.0",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@12.3.4"
+  "packageManager": "pnpm@10.33.4"
 }
