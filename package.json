@@ -1,6 +1,6 @@
 {
   "name": "@gorth/structure",
-  "version": "2.2.10",
+  "version": "3.0.0",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -102,7 +102,7 @@
     "@better-auth/sso": "^1.7.5",
     "@better-auth/stripe": "^1.7.5",
     "@supabase/postgrest-js": "^2.116.0",
-    "@supabase/server": "^1.6.1",
+    "@supabase/server": "^1.7.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.116.0",
     "ably": "^2.28.0",
@@ -119,10 +119,10 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.1",
     "@types/pg": "^8.23.1",
     "eslint": "^9.39.5",
-    "prettier": "^3.9.7",
+    "prettier": "^3.9.8",
     "tsdown": "^0.23.0",
     "typescript": "^5.9.3"
   },
