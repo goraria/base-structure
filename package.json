@@ -1,6 +1,6 @@
 {
   "name": "@gorth/structure",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -86,13 +86,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown --minify --config-loader tsx",
-    "prepack": "bun run build",
+    "build": "tsdown --minify",
+    "prepack": "pnpm build",
     "dev": "tsdown --format esm,cjs --dts --out-dir dist --watch",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "update": "bun update",
+    "update": "pnpm update",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -104,10 +104,10 @@
     "@better-auth/scim": "^1.7.5",
     "@better-auth/sso": "^1.7.5",
     "@better-auth/stripe": "^1.7.5",
-    "@supabase/postgrest-js": "^2.117.0",
+    "@supabase/postgrest-js": "^2.117.1",
     "@supabase/server": "^1.8.0",
     "@supabase/ssr": "^0.12.7",
-    "@supabase/supabase-js": "^2.117.0",
+    "@supabase/supabase-js": "^2.117.1",
     "ably": "^2.28.0",
     "axios": "^1.20.0",
     "better-auth": "^1.7.5",
@@ -118,7 +118,6 @@
     "pg": "^8.23.0",
     "postgres": "^3.4.9",
     "svix": "^2.5.0",
-    "tsdown": "^0.23.0",
     "tsx": "^4.23.15",
     "uuid": "^14.0.2",
     "zod": "^4.6.5"
@@ -127,8 +126,9 @@
     "@types/node": "^26.6.2",
     "@types/pg": "^8.23.1",
     "eslint": "^9.39.5",
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.9",
+    "tsdown": "^0.23.0",
     "typescript": "^5.9.3"
   },
-  "packageManager": "bun@1.4.2"
+  "packageManager": "pnpm@10.33.4"
 }
