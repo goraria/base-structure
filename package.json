@@ -86,7 +86,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown --minify",
+    "build": "tsdown --minify --config-loader tsx",
     "prepare": "bun run build",
     "dev": "tsdown --format esm,cjs --dts --out-dir dist --watch",
     "lint": "eslint",
@@ -119,6 +119,7 @@
     "postgres": "^3.4.9",
     "svix": "^2.5.0",
     "tsdown": "^0.23.0",
+    "tsx": "^4.23.15",
     "uuid": "^14.0.2",
     "zod": "^4.6.5"
   },
